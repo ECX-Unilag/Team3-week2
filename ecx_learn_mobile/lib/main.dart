@@ -1,3 +1,4 @@
+import 'package:ecx_learn/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,10 +8,9 @@ void main() {
 class EcxLearn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('Well\n this is the starting project'),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: WelcomeScreen(),
     );
   }
 }
