@@ -1,3 +1,4 @@
+import 'package:ecx_learn/utilities/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ecx_learn/utilities/styles.dart' as Style;
@@ -52,23 +53,15 @@ class WelcomeScreen extends StatelessWidget {
             SizedBox(
               height: 24,
             ),
-            InkResponse(
-              onTap: () {
+            CustomLongButton(
+              label: "Get started",
+              onPressed: () {
                 Navigator.pushReplacement(
                     context,
                     CupertinoPageRoute(
                       builder: (context) => HomeScreen(),
                     ));
               },
-              child: Container(
-                color: Style.themeGreen,
-                width: double.infinity,
-                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
-                child: Text(
-                  "Get started",
-                  style: Style.buttonTextStyle,
-                ),
-              ),
             ),
             Spacer(),
           ],
