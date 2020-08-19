@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- title -->
+    <title>Quiz || Quiz App</title>
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome -->
+    <script src="./js/all.js"></script>
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- main css-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-sm navbar-light bg-white shadow-sm px-lg-5 scrolling-navbar"
+    >
+      <!-- navbar brand -->
+      <a href="#header" class="navbar-brand ml-5"
+        >ECX<span class="text-success">Learn</span></a
+      >
+      <!-- nav toggler -->
+      <button
+        class="navbar-toggler p-2 m-2"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarLinks"
+        aria-controls="navbarLinks"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <div class="animated-icon3">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+      <!-- nav links -->
+      <div
+        id="navbarLinks"
+        class="navbar-collapse collapse text-center shadow-sm"
+      >
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-2 d-flex align-items-center">
+            <!-- <a href="#" class="nav-link text-light"> <i class="fas fa-user-circle fa-2x text-success" aria-hidden="true"></i> </a> -->
+            <i class="fa fa-user-circle fa-2x mx-2" aria-hidden="true"></i
+            ><span>Zakariyah AbdRafiu</span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header id="quizheader" class="py-3" style="min-height: 100vh;">
+      <div class="container">
+        <div class="row py-2 py-md-5 my-3 my-md-5 align-items-center">
+          <div class="col-sm-6 col-md-3 bg-success py-3">
+            <ul class="list-group" id="courses-list">
+              <li
+                id="mathematics"
+                class="list-group-item bg-transparent pointer"
+              >
+                <h3>Mathematics</h3>
+              </li>
+              <li id="computer" class="list-group-item bg-transparent pointer">
+                <h3>Computer Science</h3>
+              </li>
+              <li id="history" class="list-group-item bg-transparent pointer">
+                <h3>History</h3>
+              </li>
+              <li id="politics" class="list-group-item bg-transparent pointer">
+                <h3>Politics</h3>
+              </li>
+              <li id="geography" class="list-group-item bg-transparent pointer">
+                <h3>Geography</h3>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-6 ml-auto" id="quiz-ui">
+            <h1
+              class="text-uppercase"
+              data-aos="fade-in"
+              data-aos-duration="2000"
+              data-aos-easing="linear"
+            >
+              Hello <span id="username"></span>, Welcome on board!.
+            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="linear"
+            >
+              Choose one from the available courses listed here. Each course
+              contains 20 question with four multiple choices answer in which
+              only one of those is the correct answer.
+            </p>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="linear"
+            >
+              Choose wisely and Enjoy!
+            </p>
+            <a href="#quizheader">
+              <button
+                class="btn btn-outline-success px-3 py-2"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-easing="linear"
+              >
+                Get Started
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- footer -->
+    <div id="footer" class="pt-5 bg-secondary">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 d-md-flex mx-auto text-center text-md-left">
+            <div class="col-md-3">
+              <h5>ECX <span class="text-success">Learn</span></h5>
+              <div class="links mt-4">
+                <a href="" class="ml-1">
+                  <i class="fas fa-mail-bulk"></i>
+                  <span>ecxlearn@gmail.com</span>
+                </a>
+                <br />
+                <a href="" class="ml-1">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>+234 81 891 4439</span> </a
+                ><br />
+                <a href="" class="ml-1">
+                  <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                  <span>Lagos ibadan express way</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="links">
+                <p>Links</p>
+                <a href=""><h6>Home</h6></a>
+                <a href=""><h6>Courses</h6></a>
+                <a href=""><h6>About Us</h6></a>
+                <a href=""><h6>Contact Us</h6></a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="links">
+                <p>Supports</p>
+                <a href=""><h6>Post Quiz</h6></a>
+                <a href=""><h6>All mentors</h6></a>
+                <a href=""><h6>Blogs</h6></a>
+                <a href=""><h6>Shops</h6></a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="links">
+                <p>Socials</p>
+                <a href=""><h6>Instagram</h6></a>
+                <a href=""><h6>Facebook</h6></a>
+                <a href=""><h6>Twitter</h6></a>
+                <a href=""><h6>WhatsApp</h6></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-center text-white">
+            <p class="mt-2">
+              &copy; 2020 Learn, Inc. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ajax CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BootstrapJS CDN -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script></script>
+
+    <!-- my scripts -->
+    <script src="./js/script.js"></script>
+    <script src="./js/courses.js"></script>
+  </body>
+</html>
